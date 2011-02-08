@@ -4,12 +4,13 @@ SET(SRCS
   UseCTKPluginMain.cpp
 )
 
-# Include dirs
+#> Include dirs
 SET(my_includes
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_CURRENT_BINARY_DIR}
   ${CTK_INCLUDE_DIRS} # CTK include dirs for enabled libraries
 )
+#>
 
 SET(my_libs
   CTKPluginFramework
