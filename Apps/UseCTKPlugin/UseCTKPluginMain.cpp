@@ -9,6 +9,7 @@
 
 #include <service/event/ctkEventAdmin.h>
 
+//> Main method
 int main(int argc, char** argv)
 {
   QCoreApplication app(argc, argv);
@@ -27,3 +28,4 @@ int main(int argc, char** argv)
 
   return 0;
 }
+//>
