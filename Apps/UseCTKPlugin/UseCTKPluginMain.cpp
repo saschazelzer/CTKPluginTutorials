@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 
   ctkPluginFrameworkLauncher::start("org.commontk.eventadmin");
 
-  ctkPluginContext* pluginContext = ctkPluginFrameworkLauncher::getContext();
+  ctkPluginContext* pluginContext = ctkPluginFrameworkLauncher::getPluginContext();
   ctkServiceReference eventAdminRef = pluginContext->getServiceReference<ctkEventAdmin>();
   ctkEventAdmin* eventAdmin = pluginContext->getService<ctkEventAdmin>(eventAdminRef);
 

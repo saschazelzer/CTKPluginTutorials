@@ -2,4 +2,4 @@ SET(plugins
   org.mydomain.serviceeventlistener:ON
 )
 
-ctkFunctionSetupExternalPlugins(${plugins})
+ctkMacroSetupExternalPlugins(${plugins})
