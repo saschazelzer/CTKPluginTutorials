@@ -19,11 +19,13 @@ macro(GetMyTargetLibraries all_target_libraries varname)
 endmacro()
 #>
 
+#> Create a list of available plug-ins and make them known to the build system
 set(plugins
   Plugins/org.mydomain.serviceeventlistener:ON
 )
 
 ctkMacroSetupPlugins(${plugins})
+#>
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Apps)
 
