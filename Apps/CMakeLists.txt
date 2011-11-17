@@ -1,8 +1,8 @@
-SET(APPS
+set(APPS
   UseCTKPlugin
 )
 
-FOREACH(app ${APPS})
-  OPTION(BUILD_APP_${app} "Build the ${app} application" ON)
-  ADD_SUBDIRECTORY(${app})
-ENDFOREACH()
+foreach(app ${APPS})
+  option(BUILD_APP_${app} "Build the ${app} application" ON)
+  add_subdirectory(${app})
+endforeach()
