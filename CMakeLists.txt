@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8.2)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8.4)
 
 PROJECT(CTKPluginTutorials)
 
@@ -19,6 +19,11 @@ MACRO(GetMyTargetLibraries all_target_libraries varname)
 ENDMACRO()
 #>
 
-ADD_SUBDIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/Plugins)
+SET(plugins
+  Plugins/org.mydomain.serviceeventlistener:ON
+)
+
+ctkMacroSetupPlugins(${plugins})
+
 ADD_SUBDIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/Apps)
 
